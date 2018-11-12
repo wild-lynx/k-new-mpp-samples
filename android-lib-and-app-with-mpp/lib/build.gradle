@@ -34,6 +34,11 @@ dependencies {
 
 kotlin {
     sourceSets {
+        commonMain {
+            dependencies {
+                implementation 'org.jetbrains.kotlin:kotlin-stdlib-common'
+            }
+        }
         jvmLibMain {
             dependencies {
                 implementation 'org.jetbrains.kotlin:kotlin-stdlib'

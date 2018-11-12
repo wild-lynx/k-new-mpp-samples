@@ -1,9 +1,10 @@
 buildscript {
-    ext.kotlin_version = '1.3.0-rc-57'
+    ext.kotlin_version = '1.3.10'
     repositories {
         mavenLocal()
         jcenter()
         maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+        maven { url 'https://dl.bintray.com/kotlin/kotlin-dev' }
     }
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
@@ -14,6 +15,7 @@ repositories {
     mavenLocal()
     jcenter()
     maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
+    maven { url 'https://dl.bintray.com/kotlin/kotlin-dev' }
 }
 
 apply plugin: 'kotlin-multiplatform'
